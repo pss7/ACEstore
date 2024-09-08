@@ -1,0 +1,1217 @@
+@charset "UTF-8";
+
+/* 가운데영역 */
+.noticeBox,
+.paymentBox,
+.reviewBox{max-width: 1085px; margin: 0 auto;}
+
+@media (max-width: 1024px){
+
+    .productViewWrap .container,
+    .reviewWrap .container,
+    .paymentWrap .container,
+    .historyWrap .container{padding: 0 0;}
+
+}
+
+/* 공통 */
+.textLeft{text-align: left!important;}
+
+/* 공통-레이아웃 */
+.flexBox{display: flex;}
+.flexEndWrap{display: flex; justify-content: flex-end;}
+.w100{width: 100%!important;}
+
+.mobileProductList{display: none;}
+
+@media (max-width: 1024px){
+
+    .mobileProductList li{margin-bottom: 0;}
+    .mobileProductWrap{margin: 0 12px 20px; padding: 17px 17px 24px; border: 1px solid #aaa;} 
+    .mobileProductWrap .infoText{margin-bottom: 23px;}
+    .mobileProductWrap .infoText em{margin-right: 17px; font-family: 'Nanum Barun Gothic'; font-weight: 700; font-size: 23px; color: #484848;}
+    .mobileProductWrap .infoText span{font-family: 'Nanum Barun Gothic'; font-size: 23px; color: #484848;}
+    .mobileProductWrap .mPoductBox{margin-bottom: 15px; padding-bottom: 27px; border-bottom: 1px solid #aaa; display: flex; gap: 0 25px;}
+    .mobileProductWrap .mPoductBox .imgBox{position: relative; width: 112px; height: 112px;}
+    .mobileProductWrap .mPoductBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+    .mobileProductWrap .mPoductBox .textBox h4{margin-bottom: 3px; font-family: 'Nanum Barun Gothic'; font-weight: 300; font-size: 23px; color: #484848;}
+    .mobileProductWrap .mPoductBox .textBox span,
+    .mobileProductWrap .mPoductBox .textBox em{font-family: 'Nanum Barun Gothic'; font-weight: 300; font-size: 23px; color: #484848;}
+    .mobileProductWrap .mProductBtnWrap{display: flex; justify-content: space-between;}
+    .mobileProductWrap .mProductBtnWrap button{width: 113px; height: 31px; line-height: 31px; border: 1px solid #cfcfcb; border-radius: 5px; text-align: center; font-size: 15px;}
+    .mobileProductList{display: block;}
+    .mobileProductWrap .buttonSt01{background-color: #000; color: #fff;}
+    .mobileProductWrap .inputCheckBox{margin-bottom: 5px;}
+    .mobileProductWrap .inputCheckBox input{width: 19px; height: 19px; border: 1px solid #ddd;}
+
+}
+
+@media (max-width: 480px){
+
+
+    .mobileProductWrap .mPoductBox .imgBox{position: relative; margin: 0 auto; width: 100%; background-color: #f9f9f9;}
+    .mobileProductWrap .mPoductBox .imgBox img{position: absolute; top:0; left: 0; right:0; bottom: 0; max-width: 100%; max-height: 100%; margin: auto; width: auto!important; height: auto!important;}
+    .mobileProductWrap .mPoductBox{flex-direction: column; gap: 15px;}
+    .mobileProductWrap .infoText em{margin-right: 11px;}
+    .mobileProductWrap .infoText em,
+    .mobileProductWrap .infoText span{font-size: 16px;}
+    .mobileProductWrap .mPoductBox .textBox span,
+    .mobileProductWrap .mPoductBox .textBox em,
+    .mobileProductWrap .mPoductBox .textBox h4{font-size: 16px;}
+    .mobileProductWrap .mProductBtnWrap button{font-size: 13px;}
+    .mobileProductWrap .infoText{margin-bottom: 16px;}
+
+}
+
+@media (max-width: 414px){
+
+    .mobileProductWrap .mProductBtnWrap{display: block;}
+    .mobileProductWrap .mProductBtnWrap > div{width: 100%;}
+    .mobileProductWrap .mProductBtnWrap button{width: 100%; margin: 0 0 7px!important;}
+
+}
+
+/* 공통-상세 */
+.mtableViewWrap{display: none;}
+/* .tableViewWrap{max-width: 1085px; margin: 50px auto;} */
+.tableViewWrap .tableView{width: 100%;}
+.tableViewWrap .tableView tr{border: 1px solid #aaa; border-width: 1px 0;}
+.tableViewWrap .tableView tr th,
+.tableViewWrap .tableView tr td{ font-size: 12px; color: #212121; font-weight: 400; text-align: left;}
+.tableViewWrap .tableView tr th{padding: 14px 0 14px 12px;}
+.tableViewWrap .tableView tr td{padding: 14px 10px;}
+.tableViewWrap .views{padding-left: 43px; padding-right: 19px;}
+.tableViewWrap  .contentView{min-height: 265px; padding: 13px 15px 13px 0; }
+.tableViewWrap .fileName{position: relative; padding-left: 13px; letter-spacing: 0;}
+.tableViewWrap .fileName::before{content: ''; position: absolute; top:1px; left:0; width: 7px; height: 12px; background: url(../images/sub/fileimg.png)no-repeat;}
+.tableViewWrap .btnWrapSt01{max-width: none; padding: 12px 0;}
+.tableViewWrap .writing{padding-left: 15px; position: relative;}
+.tableViewWrap .writing::before{content: ''; position: absolute; top:4px; left:0; width: 7px; height: 5px;}
+.tableViewWrap .writing.prev::before{background: url(../images/sub/arrow04.png)no-repeat;}
+.tableViewWrap .writing.next::before{background: url(../images/sub/arrow04.png)no-repeat; transform: rotate(180deg);}
+
+@media (max-width: 1024px){
+
+    .tableViewWrap{display: none;}
+    .tableViewWrap .contentView{min-height: 354px;}
+    .mtableViewWrap{display: block;}
+    .mtableViewWrap .viewsWrap{display: flex; gap: 0 24px;}
+    .mtableViewWrap .viewsWrap span{position: relative; padding: 0;}
+    .mtableViewWrap .viewsWrap span::after{content: ''; position: absolute; top: 5px; right:-12px; width: 1px; height: 7px; background-color: #aaa;}
+    .mtableViewWrap .viewsWrap span:last-child:after{display: none;}
+    .mtableViewWrap .tableView tr td{padding: 10px 18px;}
+    .mtableViewWrap .contentView{padding: 10px 20px 10px 0;}
+
+}
+
+/* 공통-쓰기 */
+/* .tableWriteWrap{max-width: 1085px; margin:50px auto 90px;} */
+.tableWriteWrap .tableWrite{width: 100%;}
+.tableWriteWrap .tableWrite tbody th{padding: 10px 0 10px 14px; font-size: 12px; color: #212121; text-align: left; font-weight: 400;}
+.tableWriteWrap .tableWrite tbody td{padding: 10px 10px 10px 14px; font-size: 12px; color: #212121;}
+.tableWriteWrap .tableWrite tbody tr{border: 1px solid #aaa; border-width: 1px 0;}  
+.tableWriteWrap .tableWrite .selectWrap select{padding-left: 9px; width: 89px; height: 22px; border: 1px solid #b5b6b3; font-size: 12px; color: #212121; cursor: pointer;}
+.tableWriteWrap .tableWrite .inputTextWrap input{padding-left: 12px; font-size: 12px; color: #212121; border: 1px solid #b5b6b3;}  
+.tableWriteWrap .tableWrite .inputTextWrap input::placeholder{color: #212121;}
+.tableWriteWrap .tableWrite .titWrap{display: flex; gap: 0 5px;}
+.tableWriteWrap .tableWrite .titWrap .inputTextWrap,
+.tableWriteWrap .tableWrite .titWrap .inputTextWrap input{width: 100%;}
+.tableWriteWrap .tableWrite .emailWrap{display: flex; align-items: center; gap: 0 9px;}
+.tableWriteWrap .tableWrite .emailWrap input{width: 189px;}
+.tableWriteWrap .tableWrite .emailWrap select{padding-left: 9px; width: 99px;}
+.tableWriteWrap .tableWrite .fileWrap{display: flex; align-items: center;}
+.tableWriteWrap .tableWrite .fileWrap .uploadName{width: 89px; margin-right: 70px; font-size: 12px; color: #212121; border: 0;}
+.tableWriteWrap .tableWrite .fileWrap label{display: block; margin-right: 19px; padding: 0 20px; width: 107px; height: 24px; line-height: 24px; border-radius: 5px; background-color: #ededeb; border: 0; font-size: 12px; color: #828281; text-align: center; font-weight: 400; cursor: pointer;}
+.tableWriteWrap .tableWrite .fileWrap .fileInfoText{font-size: 12px; color: #bebebe;}
+
+@media (max-width: 1024px){
+
+    .tableWriteWrap{margin: 50px 0 22px;}
+    .tableWriteWrap col{width: 70px!important;}
+
+}
+
+@media (max-width: 640px){
+
+    .tableWriteWrap .tableWrite .emailWrap input{width: 100%;}
+    .tableWriteWrap .tableWrite .emailWrap .inputTextWrap{width: 35%;}
+    .tableWriteWrap .tableWrite .fileWrap .uploadName{margin-right: 23px;}
+
+}
+
+@media(max-width: 600px){
+
+    .tableWriteWrap .tableWrite .fileWrap{flex-direction: column; gap: 10px; align-items: flex-start;}
+    .tableWriteWrap .tableWrite .fileWrap .uploadName{width: 100%;}
+
+}
+
+/* 공통-탭 */
+.tab{margin: 0 0 60px; display: flex; flex-wrap: wrap; gap: 0 13px;}
+.tab li{width: 242px;}
+.tab li a{display: block; height: 46px; line-height: 46px; font-family: 'Nanum Barun Gothic'; font-weight: 300; color:#484848; font-size: 18px; border-radius: 20px 20px 0 0; border: 1px solid #a4a4a3; text-align: center; border-bottom: 0!important; background-color: #f4f4f4;}
+.tab li a.active{background-color: #e8e8e8; font-weight: 700; border: 1px solid #585856; color: #000;}
+.tab02{margin: 50px 0 76px; flex-wrap: wrap; display: flex; gap: 6px 12px; }
+.tab02 li a{display: block; padding: 5px 39px; border: 3px solid #cfcfcf; text-align: center; font-family: 'Nanum Barun Gothic'; font-weight: 300; font-size: 16px; text-align: center; color: #585858; border-radius: 5px; transition: all .3s;}
+.tab02 li a.active{border-color: #000; font-weight: 700; color: #222;}
+.tab02 li a:hover{border-color: #000; font-weight: 700; }
+
+@media (max-width: 1024px){
+
+    .tab li{width: 32.48%; flex: 1;}
+    .tab li a{height: 39px; line-height: 39px; font-size: 16px; border-radius: 15px 15px 0 0;}
+    .tab{gap: 0 1.5%; margin: 0 0 30px;}
+
+    .tab02{margin: 50px 0 36px;}
+    
+}
+
+@media (max-width: 414px){
+
+    .tab li{width: 49.36%;}
+
+}
+
+/* 공통-검색 */
+.serachWrap{display: flex; align-items: center; justify-content: center; gap: 0 11px;}
+.serachWrap .selectWrap select{padding-left: 2px; width: 64px; height: 22px; border: 1px solid #b5b6b3; font-size: 12px; color: #212121; cursor: pointer;}
+.serachWrap .inputTextWrap{margin-right: -5px;}
+.serachWrap .inputTextWrap input{padding-left: 2px; width: 158px; height: 22px; border: 1px solid #b5b6b3; font-size: 12px; color: #212121;}
+.serachWrap .keywordBtn{width: 107px; height: 24px; background-color: #e1e1de; text-align: center; color: #000; font-size: 12px; border-radius: 5px;}
+
+@media (max-width: 1024px){
+
+    .serachWrap{padding: 0 20px;}
+
+}
+
+@media (max-width: 480px){
+
+    .serachWrap{flex-direction: column; gap: 5px;}
+    .serachWrap .selectWrap {display: block; width: 100%;}
+    .serachWrap .selectWrap select{ width: 100%;}
+    .serachWrap .inputTextWrap{display: block; width: 100%;}
+    .serachWrap .inputTextWrap input{width: 100%;}
+    .serachWrap .keywordBtn{width: 100%;}
+
+}
+
+/* 공통-콘텐츠 영역 */
+.contentWrap{padding: 105px 0 192px;} 
+
+@media (max-width: 640px){
+
+    .contentWrap{padding: 70px 0 60px;} 
+
+}
+
+/* 공통-텍스트 */
+.textLeft{text-align: left!important;}
+
+/* 공통-페이지네이션 */
+.paginationWrap {margin: 30px 0 35px; display: flex; gap: 0 15px; align-items: center; justify-content: center;}
+.paginationWrap .paginationBox{ display: flex; gap: 0 27px; align-items: center;}
+.paginationWrap .pageLink {position: relative; font-size: 12px;
+    color: #8e8e8e;}
+.paginationWrap .pageLink.active {color: #212121; font-weight: 700;}
+.paginationWrap .pageLinkPrev::after {content: ''; display: block; width: 5px; height: 7px; background: url(../images/sub/arrow02.png)no-repeat;}
+.paginationWrap .pageLinkNext::after {content: ''; display: block;  width: 5px; height: 7px; background: url(../images/sub/arrow02.png)no-repeat; transform: translateX(-50%) rotate(180deg);}
+.paginationWrap .pageLinkFirst::after{content: ''; display: block; width: 12px; height: 7px; background: url(../images/sub/arrow03.png)no-repeat;}
+.paginationWrap .pageLinkLast::after{content: ''; display: block; width: 12px; height: 7px; background: url(../images/sub/arrow03.png)no-repeat; transform: translateX(-50%) rotate(180deg);}
+
+@media (max-width: 1024px){
+
+    .paginationWrap{margin-top: 70px;}
+
+}
+
+/* 공통-버튼 */
+.btnWrapSt01{max-width: 1085px; margin: 0 auto; justify-content: space-between!important;}
+.btnWrapSt01 button,
+.btnWrapSt01 a{width: 74px!important; height: 22px!important; line-height: 22px; font-size: 12px!important; text-align: center; font-weight: 700;} 
+.btnWrap{display: flex; align-items: center; justify-content: flex-end; gap: 0 6px;}
+.comBtn{display: block; width: 100%; height: 41px; line-height: 44px; margin: 24px auto 17px; text-align: center; font-size: 22px; color: #fff; background-color: #000; font-family: 'Nanum Barun Gothic';}
+.comBtn01{display: block; margin: 2px auto; width: 88px; height: 24px; line-height: 24px;  color: #fff; background-color: #000; border-radius: 5px; font-size: 12px;}
+.comBtn02{display: block; margin: 2px auto; width: 88px; height: 24px; line-height: 24px; color: #171717; border: 1px solid #cfcfcb; border-radius: 5px; font-size: 12px; text-align: center;}
+.comBtn03{display: block; width: 120px; height: 37px; font-family: 'Nanum Barun Gothic'; font-size: 19px; color: #000; border: 1px solid #cfcfcb;}
+.comBtn04{display: block; width: 120px; height: 37px; background-color: #000; color: #fff; font-size: 19px;}
+.comBtn05{width: 74px; height: 23px; line-height: 25px; background-color: #101010; text-align: center; font-family: 'Nanum Barun Gothic'; color: #fff; font-size: 12px;}
+.comBtn06{width: 97px; height: 27px; line-height: 29px; background-color: #e1e1de; text-align: center; font-family: 'Nanum Barun Gothic'; color: #363636; font-size: 13px;}
+
+@media (max-width: 1024px){
+ 
+    .btnWrap{ justify-content: center;}
+
+    .btnWrapSt01{padding: 0 10px;}
+    .comBtn{margin: 13px auto 9px; height: 48px; line-height: 50px; font-size: 26px;}
+    
+}
+
+@media (max-width: 480px){
+
+    .comBtn{height: 40px; line-height: 42px; font-size: 16px;}
+
+    .comBtn03,
+    .comBtn04{font-size: 14px;}
+
+}
+
+/* 공통_제목 */
+.contentWrap .title03{margin-bottom: 25px; font-size: 47px; color: #000; text-align: center;}
+.contentWrap .title04{margin-bottom: 9px; font-size: 18px; color: #000;}
+
+@media (max-width: 480px){
+
+    .contentWrap .title03{margin-bottom: 20px; font-size: 26px;}
+
+}
+
+/* 공통_테이블 */
+.tableWrap table{width: 100%;}
+.tableWrap table tr{border: 1px solid #aaa; border-width: 1px 0;}
+.tableWrap table tr th{padding: 10px 10px 10px 15px; font-size: 12px; color: #959595; font-weight: 400; text-align: left; word-break: keep-all;}
+.tableWrap table tr td{padding: 10px 13px 10px 0;}
+.essential{color: #e30000;}
+
+/* 공통_폼 */
+.inputTextWrap input{padding: 0 0 0 9px; width: 158px; height: 22px; border: 1px solid #aaa; font-size: 12px; color: #c8c8c8;}
+.addressWrap .inputTextWrap{margin-bottom: 13px;}
+.addressWrap .inputTextWrap:last-child{margin-bottom: 22px;}
+.addressWrap .addressBtn{display: inline-block; margin-left: 5px; width: 107px; height: 24px; text-align: center; font-size: 12px; color: #000; background-color: #e1e1de; border-radius: 5px;}
+.selectWrap{display: flex; align-items: center; gap: 0 9px; line-height: 1;}
+.selectWrap .selectBox select{padding-left: 6px; width: 64px; height: 22px; border: 1px solid #b5b6b3; font-size: 12px; color: #000;}
+.selectWrap input{padding-left: 6px; width: 64px; height: 22px; }
+
+/* 로그인 */
+.loginWrap .loginBox{max-width: 368px; margin: 0 auto;}
+.loginWrap .inputTextWrap{margin-bottom: 11px;}
+.loginWrap .inputTextWrap:last-child{margin-bottom: 0;}
+.loginWrap .inputTextWrap input{width: 100%; padding: 0 0 0 11px; height: 41px; border: 1px solid #b5b6b3; font-size: 12px; color: #959595;}
+.loginWrap .inputCheckWrap{margin: 10px 0 5px; display: flex; align-items: center; gap: 0 9px;}
+.loginWrap .inputCheckWrap .inputCheckBox{display: flex; align-items: center; gap: 0 3px;}
+.loginWrap .inputCheckWrap .inputCheckBox label{font-size: 12px; color: #959595;}
+.loginWrap .inputCheckWrap .security{font-size: 12px; color: #959595;}
+.loginWrap .inputCheckWrap .security span{position: relative; padding-left: 14px;}
+.loginWrap .inputCheckWrap .security span::before{content: ''; width: 8px; height: 10px; position: absolute; top:1px; left:0; background: url(../images/common/security.png)no-repeat;}
+.loginWrap .linkWrap{display: flex; justify-content: flex-end; gap: 0 27px; }
+.loginWrap .linkWrap li a{display: block; font-size: 12px; color: #959595;}
+.loginWrap .linkWrap li a span{position: relative;}
+.loginWrap .linkWrap li a span::after{content: ''; position: absolute; top:1px; right:-15px; width: 1px; height: 11px; background-color: #959595;} 
+.loginWrap .linkWrap li:last-child a span::after{display: none;}
+.loginWrap .linkWrap{display: flex; gap: 0 27px;}
+.loginWrap .linkWrap li a{display: block;}
+.loginWrap .snsLoginWrap{display: flex; gap: 4px; flex-wrap: wrap;}
+.loginWrap .snsLoginWrap a{display: block; padding: 4px 0; position: relative; width: 49.4%; height: 31px; font-family: 'Nanum Barun Gothic'; color: #fff; text-align: center;}
+.loginWrap .snsLoginWrap a::before{content: ''; position: absolute; top:50%; transform: translateY(-50%);} 
+.loginWrap .snsLoginWrap a.naver::before{left:8px; width: 16px; height: 15px; background: url(../images/common/naver.png) no-repeat;}
+.loginWrap .snsLoginWrap a.facebook::before{left:6px; width: 18px; height: 18px; background: url(../images/common/facebook.png) no-repeat;}
+.loginWrap .snsLoginWrap a.kakao::before{left:6px; width: 19px; height: 17px; background: url(../images/common/kakao.png) no-repeat;}
+.loginWrap .snsLoginWrap a.naver{background-color: #26c826;}
+.loginWrap .snsLoginWrap a.facebook{background-color: #4165af;}
+.loginWrap .snsLoginWrap a.kakao{background-color: #ffeb00; color: #3e201e;} 
+
+@media (max-width: 1024px){
+
+    .loginWrap .loginBox{max-width: 438px;}
+    .loginWrap .snsLoginWrap{display: block;}
+    .loginWrap .snsLoginWrap a{padding: 8px 0; margin-bottom: 6px; width: 100%; height: 37px;}
+    .loginWrap .snsLoginWrap a:last-child{margin-bottom: 0;}
+    .loginWrap .loginLayoutWrap{display: flex; flex-direction: column;}
+    .loginWrap .linkWrap{margin-bottom: 23px; order: 1; justify-content: center;}
+    .loginWrap .inputTextWrap input{height: 49px;}
+    
+}
+
+@media (max-width: 480px){
+
+    .loginWrap .inputTextWrap input{height: 45px;}
+
+}
+
+/* 회원가입 */
+.joinWrap .joinBox{max-width: 1089px; margin: 0 auto;}
+.joinWrap .inputRadioWrap label{font-size: 12px; color: #000; cursor: pointer;}
+.joinWrap .inputRadioWrap input{vertical-align: -3px;}
+.joinWrap .agreeWrap{margin-bottom: 84px; padding: 19px 16px 43px; background-color: #f1f1f1;}
+.joinWrap .agreeWrap .inputCheckWrap{margin-bottom: 20px;}
+.joinWrap .agreeWrap .inputCheckWrap p{font-size: 12px; color: #525252; font-weight: 700;}
+.joinWrap .agreeWrap .inputCheckWrap input{vertical-align: middle;}
+.joinWrap .agreeWrap .inputCheckWrap label{font-size: 12px; color: #525252; font-weight: 700; cursor: pointer;}
+.joinWrap .agreeWrap h5{margin-bottom: 9px; font-size: 12px; color: #525252; }
+.joinWrap .agreeWrap .agreeTextWrap{margin-bottom: 15px; padding: 12px 30px 12px 22px; height: 232px; overflow-y: auto; background-color: #fff; border: 1px solid #aaa; }
+.joinWrap .agreeWrap .agreeTextWrap pre{margin: 0; line-height: 2; font-size: 12px; color: #525252; font-family: 'Nanum Gothic';}
+.joinWrap .comBtn{max-width: 368px;}
+.joinWrap .tableWrapMgb01{margin: 0 0 100px;}
+.joinWrap .tableWrapMgb02{margin: 0 0 150px;}
+.joinWrap #address01,
+.joinWrap #address02{width: 553px;}
+.joinWrap .comBtnWrap .container{padding: 0 20px!important;}
+
+@media (max-width: 1024px){
+
+    .joinWrap .agreeWrap .agreeTextWrap{margin-bottom: 8px;}
+    .joinWrap .container{padding: 0;}
+    .joinWrap .title04{padding-left: 12px;}
+    .joinWrap .agreeWrap{padding: 19px 20px 5px;}
+    .joinWrap .tableWrapMgb01{margin: 0 0 50px;}
+    .joinWrap .tableWrapMgb02{margin: 0 0 67px;}
+    /* .joinWrap .comBtn{height: 41px; line-height: 42px; font-size: 21px;} */
+    .joinWrap #address01,
+    .joinWrap #address02{width: 100%;}
+
+}
+
+@media (max-width: 480px){
+
+    .joinWrap .addressWrap .addressBtn{display: block; margin:5px 0 0;}
+    /* .joinWrap .comBtn{ font-size: 16px;} */
+
+}
+
+/* 장바구니 */
+.tableWrapSt01 thead tr th{padding: 14px 15px; font-size: 12px; color: #000; text-align: center; font-weight: 700; white-space: nowrap;}
+.tableWrapSt01 thead tr th input{vertical-align: middle; cursor: pointer;}
+.tableWrapSt01 tbody tr{border-top: 0;}
+.tableWrapSt01 tbody tr td{padding: 21px 15px; font-size: 12px; text-align: center; color: #000;}
+.tableWrapSt01 tbody tr td .productWrap{ display: flex; align-items: center; gap: 0 29px;}
+.tableWrapSt01 tbody tr td .productWrap .imgWrap{position: relative; width: 61px; height: 61px; border: 1px solid #cecece; display: flex; align-items: center; justify-content: center;}
+.tableWrapSt01 tbody tr td .productWrap .imgWrap img{display: block; width: 100%; object-fit: cover;}
+.tableWrapSt01 tbody tr td .productWrap h4{font-size: 12px; color: #000; font-weight: 400;}
+.cartBox .infoTextWrap{margin: 99px 0 0; padding: 23px 30px 30px 30px; background-color: #f1f1f1; border: 1px solid #aaa;}
+.cartBox .infoTextWrap h4{margin-bottom: 14px; font-family: 'Nanum Barun Gothic'; font-size: 19px; color: #000;}
+.cartBox .infoTextWrap .infoList{margin-bottom: 19px;}
+.cartBox .infoTextWrap .infoList li::before{content: ''; position: absolute; top:6px; left:0; width: 4px; height: 4px; background-color: #8c8d8f;}
+.cartBox .infoTextWrap .infoList li{position: relative;  margin-bottom: 10px; padding: 0 0 0 11px; font-size: 12px; color: #525252;}
+.cartBox .quantityWrap{display: flex; flex-direction: column; align-items: center;}
+.cartBox .quantityWrap .numberWrap{margin-bottom: 5px; position: relative; width: 49px; height: 25px; border: 1px solid #d4d8d9; border-radius: 3px;}
+.cartBox .quantityWrap .numberWrap .number{display: flex; align-items: center; height: 100%; padding-left: 7px; color: #353535; text-align: left;}
+.cartBox .quantityWrap .numberWrap .numberBox{width: 21px; position: absolute; top:0; right:0; bottom: 0; display: flex; flex-direction: column; border-left: 1px solid #d4d8d9;}
+.cartBox .quantityWrap .numberWrap .numberBox button{display: block; width: 100%; height: 100%; cursor: pointer;}
+.cartBox .quantityWrap .numberWrap .numberBox button:last-child{border-bottom: 0;}
+.cartBox .quantityWrap .numberWrap .numberBox .plus{background: url(../images/sub/arrow01.png)no-repeat center;}
+.cartBox .quantityWrap .numberWrap .numberBox .minus{background: url(../images/sub/arrow05.png)no-repeat center;}
+.cartBox .quantityWrap .numberWrap .numberBox .box{position: relative; height: 50%; display: flex; align-items: center; justify-content: center;  border-bottom: 1px solid #d4d8d9;}
+.cartBox .quantityWrap .numberWrap .numberBox .box:last-child{border-bottom: 0;}
+.cartBox .quantityWrap .changeBtn{display: block; width: 49px; height: 24px; font-size: 12px; color: #171717; border: 1px solid #cfcfcb; border-radius: 3px;}
+.cartBox .btnWrap{padding: 0 20px;}
+.mcartselect{display: none;}
+.mPriceWrap{display: none;}
+.cartBox .comBtn03,
+.cartBox .comBtn04{width: 173px;}
+
+@media (max-width: 1024px){
+
+    .tableWrapSt01{overflow-x: auto;}
+    .tableWrapSt01 table{width: 1024px;}
+    .cartBox .infoTextWrap{margin: 77px 5px 0;}
+    .cartWrap .container{padding: 0;}
+    .cartBox .quantityWrap .infoTextWrap{margin: 77px 5px 0;}
+    .tableWrapSt01 tbody tr td .productWrap{flex-direction: column; gap: 8px;}
+
+    .cartBox .tableWrap{display: none;}
+
+    .cartBox .btnWrap{margin-top: 30px;}
+    .cartProductList .mobileProductWrap{margin-bottom: 0; border-bottom: 0;}
+    .cartProductList .textBox{letter-spacing: 0;}
+    .cartProductList .textBox h4{margin-bottom: 10px;}
+    .cartProductList .price01{display: block; margin-bottom: 15px; font-size: 12px!important; color: #000!important;}
+    .cartProductList .price02{display: block; margin-bottom: 16px;  font-size: 12px!important; color: #000!important; line-height: 1.4!important;}
+    .cartProductList .price02 .color{font-size: 12px!important; color: #c90101!important;}
+    .cartProductList .mobileProductWrap .mPoductBox{padding-bottom: 19px;}
+    .cartProductList .numberWrap{display: flex; gap: 0 7px;}
+    .cartProductList .minus,
+    .cartProductList .plus{width: 27px; height: 18px; border-radius: 3px; border: 1px solid #b0b0b0;}
+    .cartProductList .number{display: block; width: 45px; height: 20px; line-height: 20px; text-align: center; font-size: 12px; color: #000; border: 1px solid #cecece;}
+    .cartProductList .change{display: block; width: 49px; height: 24px; line-height: 24px; text-align: center; font-size: 12px; color: #171717; border-radius: 3px; border: 1px solid #cfcfcb; align-self: flex-start;}
+    .mcartselect{display: block;  padding: 8px 0; margin: 0 12px; display: flex; justify-content: center; gap: 0 15px; border: 1px solid #aaa;}
+    .mcartselect button{width: 113px; height: 30px; line-height: 30px; border: 1px solid #cfcfcb; border-radius: 5px; text-align: center;}
+    .mPriceWrap{padding: 0 12px;}
+    .mPriceWrap .mPriceBox{display: flex; align-items: center; justify-content: space-between; padding: 0 18px 0 22px; height: 47px;}
+    .mPriceWrap .mPriceBox span{font-size: 15px; color: #171717;}
+    .mPriceWrap .mPriceBox em{font-size: 15px; color: #171717;}
+    .mPriceWrap .mPriceBox01 em{font-weight: 700;}
+    .mPriceWrap .mPriceBox02{margin-bottom: -1px;}
+    .mPriceWrap .mPriceBox02,
+    .mPriceWrap .mPriceBox03{border: 1px solid #aaa;}
+    .mPriceWrap{display: block;}
+}
+
+/* 아이디 찾기, 비밀번호찾기 */
+.findBox .loginInfoText{margin-bottom: 58px; text-align: center; font-family: 'Nanum Barun Gothic'; color: #5f5f5f; line-height: 1.3;}
+.findBox .findFormWrap{max-width: 368px; margin: 0 auto;}
+.findBox .findFormWrap .findFormBox{display: flex; margin-bottom: 9px;}
+.findBox .findFormWrap .findFormBox span{padding: 8px 0; display: block; width: 121px; font-size: 12px; color: #959595;}
+.findBox .findFormWrap .inputSelectWrap select{padding-left: 8px; width: 240px; height: 34px; border: 1px solid #b5b6b3; font-size: 12px; color: #000;}
+.findBox .findFormWrap .inputSelectWrap{margin-bottom: 14px;}
+.findBox .findFormWrap .inputSelectWrap select{cursor: pointer;}
+.findBox .findFormWrap .inputRadioWrap{display: flex; gap: 0 14px; margin-bottom: 7px;}
+.findBox .findFormWrap .inputRadioWrap input{vertical-align: -3px;}
+.findBox .findFormWrap .inputRadioWrap label{font-size: 12px; color: #959595; cursor: pointer;}
+.findBox .findFormWrap .inputTextWrap input{padding: 0 10px 0 15px; width: 240px; height: 34px; border: 1px solid #b5b6b3;}
+.findBox .findFormWrap .comBtn{margin-top: 29px;}
+
+@media (max-width:1024px){
+
+    .findBox .findFormWrap{max-width: 432px;}
+    .findBox .findFormWrap .findFormBox .box{width: 100%;}
+    .findBox .findFormWrap .inputSelectWrap select,
+    .findBox .findFormWrap .inputTextWrap input{width: 100%;}
+
+}
+
+/* 고객센터, 공지사항 */
+.tableWrapSt02 table{margin-bottom: 25px;}
+.tableWrapSt02 tbody tr td.m_category{display: none;}
+.tableWrapSt02 thead tr th{font-weight: 400;}
+.tableWrapSt02 tbody tr td{padding: 12px 15px; }
+.tableWrapSt02 tbody tr td a{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.tableWrapSt02 tbody tr td.views{position: relative;}
+.tableWrapSt02 tbody tr td.views::before{display: none; content: '조회';}
+.categoryBtn{display: block; width: 62px; height: 25px; line-height: 27px; background-color: #eee; border: 1px solid #d5d5d3; font-size: 12px; color: #212121;}
+.serviceBox .btnWrapSt01{max-width: none; margin-top: 60px;}
+
+@media (max-width: 1024px){
+
+    .serviceBox .btnWrapSt01{margin-top: 20px;}
+
+    .serviceWrap .container,
+    .noticeWrap .container{padding: 0;}
+    .serviceBox .comBtnWrap{position: absolute; top:-43px; right:10px;}
+    .noticeWrap .name{display: none;}
+
+    .tableWrapSt02 table{width: 100%; margin-bottom: 0;}
+    .tableWrapSt02{position: relative; overflow: visible;}
+    .tableWrapSt02 thead {display: none;}
+    .tableWrapSt02 tbody tr{display: block; border-top: 1px solid #aaa; border-bottom: none;}
+    .tableWrapSt02 tbody tr td:nth-child(1){display: none;}
+    .tableWrapSt02 tbody tr:last-child{border-bottom: 1px solid #aaa;}
+    .tableWrapSt02 tbody{display: flex; flex-direction: column; width: 100%;}
+    .tableWrapSt02 tbody tr td{padding: 8px 10px;}
+    .tableWrapSt02 tbody tr td.text{display: flex; flex-direction: row; align-items:center;
+        gap: 20px;padding-bottom: 0;}
+    .tableWrapSt02 tbody tr td.m_category{display: table-cell; padding-right: 0;}
+    .tableWrapSt02 tbody tr td.pc_category{display: none;}
+    .tableWrapSt02 tbody tr td.name{position: relative;}
+    .tableWrapSt02 tbody tr td.name::after{content: ''; width: 1px; height: 8px; position: absolute; top:15px; right:0; background-color: #a6a6a6;} 
+    .tableWrapSt02 colgroup col{display: none;}
+    .tableWrapSt02 tbody tr td.views::before{display: inline-block; margin-right: 3px;}
+    
+}
+
+/* 개인정보처리방침 */
+.textArea p,
+.textArea ul li{font-size: 12px; color: #8f8e8e; line-height: 1.6; font-weight: 300;}
+.textArea{margin-top: 40px; letter-spacing: 0;}
+
+/* 마이페이지 */
+.mypageBox{max-width: 1087px; margin: 0 auto;}
+.mypageBox .deliveryInfoWrap{margin: 50px 0 68px; padding: 46px 0 39px 79px; display: flex; gap: 0 167px; align-items: center; border: 1px solid #aaa; border-width: 1px 0;}
+.mypageBox .deliveryInfoWrap .deliveryInfoList01{display: flex; gap: 0 114px; align-items: center;}
+.mypageBox .deliveryInfoWrap .deliveryInfoList01 li span{display: block; margin-bottom: 13px; font-size: 24px; color: #000; text-align: center; line-height: 1;}
+.mypageBox .deliveryInfoWrap .deliveryInfoList01 li em{display: block; font-size: 26px; color: #000; text-align: center; line-height: 1;} 
+.mypageBox .deliveryInfoWrap .deliveryInfoList02 li{padding-left: 7px; position: relative; margin-bottom: 15px; font-size: 12px; color: #000; line-height: 1;}
+.mypageBox .deliveryInfoWrap .deliveryInfoList02 li::before{content: ''; position: absolute; top:5px; left:0; width: 1px; height: 1px; background-color: #000;}
+.mypageBox .deliveryInfoWrap .deliveryInfoList02 li:last-child{margin-bottom: 0;}
+.mypageBox .deliveryInfoWrap .deliveryInfoList02 li em{padding-right: 6px;}
+.mypageBox .deliveryInfoWrap .deliveryInfoList02 li span{padding-left: 9px;}
+.mypageBox .deliveryInfoLink{display: flex; justify-content: center; flex-wrap: wrap; align-items: center; gap: 0 2.76%;}
+.mypageBox .deliveryInfoLink li{width: 22.93%;}
+.mypageBox .deliveryInfoLink li a{padding: 20px 20px 0 ; display: block; height: 170px;
+border: 1px solid #dadada; text-align: center;}
+.mypageBox .deliveryInfoLink li a h4{position: relative; padding-top: 63px; margin-bottom: 17px; font-weight: 800; color: #000; font-size: 16px; line-height: 1;}
+.mypageBox .deliveryInfoLink li a h4::after{content: ''; position: absolute; left: 50%; transform: translateX(-50%); top:0;}
+.mypageBox .deliveryInfoLink li a.icon01 h4::after{width: 50px; height: 50px; background: url(../images/sub/icon01.png)no-repeat;}
+.mypageBox .deliveryInfoLink li a.icon02 h4::after{width: 59px; height: 45px; background: url(../images/sub/icon02.png)no-repeat;}
+.mypageBox .deliveryInfoLink li a.icon03 h4::after{width: 49px; height: 49px; background: url(../images/sub/icon03.png)no-repeat;} 
+.mypageBox .deliveryInfoLink li a.icon04 h4::after{width: 55px; height: 55px; background: url(../images/sub/icon04.png)no-repeat;}
+.mypageBox .deliveryInfoLink li a p{font-size: 13px; color: #000; line-height: 1.3;}
+
+@media (max-width: 1024px){
+
+    .mypageWrap .container{padding: 0;}
+
+    .mypageBox .deliveryInfoWrap{flex-direction: column; padding: 22px 0 0; margin: 0 0 68px;}
+    .mypageBox .deliveryInfoWrap .deliveryInfoList01{justify-content: space-between; width: 100%; gap: 0;}
+    .mypageBox .deliveryInfoWrap .deliveryInfoList01 li{width: 20%;}
+    .mypageBox .deliveryInfoWrap .deliveryInfoList01 li span{font-size: 18px;}
+    .mypageBox .deliveryInfoWrap .deliveryInfoList01 li em{font-size: 20px;}
+    .mypageBox .deliveryInfoWrap .deliveryInfoList02{margin-top: 22px; position: relative; padding: 13px 64px; display: flex; justify-content: space-between; width: 100%;}
+    .mypageBox .deliveryInfoWrap .deliveryInfoList02::after{content: ''; position: absolute; top:0; left:-100%; right: -100%; height: 1px; background-color:#aaa;}
+    .mypageBox .deliveryInfoWrap .deliveryInfoList02 li{margin: 0;}
+    .mypageBox .deliveryInfoLink{padding: 0 57px; gap: 0 3.3%;}
+    .mypageBox .deliveryInfoLink li{width: 48.35%; margin-bottom: 3.3%;}
+
+}
+
+@media (max-width: 640px){
+
+    .mypageBox .deliveryInfoLink{gap: 0 5.7%;}
+    .mypageBox .deliveryInfoLink li{width: 47.15%; margin-bottom: 5.7%;}
+    .mypageBox .deliveryInfoWrap .deliveryInfoList02{padding: 13px 10vw;}
+
+}
+
+@media (max-width: 576px){
+
+    .mypageBox .deliveryInfoLink{padding: 0 20px;}
+
+}
+
+@media (max-widtH: 480px){
+
+    .mypageBox .deliveryInfoLink{gap:0;}
+    .mypageBox .deliveryInfoLink li{width: 100%; margin-bottom: 10px;}
+    .mypageBox .deliveryInfoWrap{margin-bottom: 40px; padding: 22px 20px 0;}
+    .mypageBox .deliveryInfoWrap .deliveryInfoList01 li em{font-size: 18px;}
+    .mypageBox .deliveryInfoWrap .deliveryInfoList01 li span{font-size: 16px;}
+
+}
+
+@media (max-width: 414px){
+
+    .mypageBox .deliveryInfoWrap .deliveryInfoList01 li span{font-size: 14px;}
+    .mypageBox .deliveryInfoWrap .deliveryInfoList01 li em{font-size: 16px;}
+
+}
+
+/* 관심상품, 최근 본 상품 */
+.tableWrapSt03{margin: 50px 0 18px;}
+.tableWrapSt03 table{font-family: 'Nanum Barun Gothic';}
+.tableWrapSt03 table th,
+.tableWrapSt03 table td{font-weight: 300;}
+.tableWrapSt03 tbody tr td{padding: 9px 15px; font-size: 14px;}
+.tableWrapSt03 tbody tr td .productWrap{justify-content: center;}
+.tableWrapSt03 tbody tr td .productWrap .imgWrap{width: 83px; height: 83px; border: 0;}
+.recentBox .btnWrap button,
+.interestBox .btnWrap button{font-size: 13px;}
+.recentBox .btnWrap .comBtn04,
+.interestBox .btnWrap .comBtn04{width: 97px; height: 27px;}
+
+@media (max-width: 1024px){
+    
+    .recentWrap .container,
+    .interestWrap .container{padding: 0;}
+
+    /* .tableWrapSt03{overflow: visible;} */
+    .tableWrapSt03 table{/*width: 100%;*/ width: 1024px;}
+
+    .recentBox .btnWrap,
+    .interestBox .btnWrap{justify-content: flex-end;}
+
+    .recentBox .paginationWrap,
+    .interestBox .paginationWrap{margin-top: 53px;}
+    
+    .recentBox .tableWrap,
+    .interestBox .tableWrap{display: none;}
+
+    .interestBox .btnWrap{margin-right: 12px;}
+
+}
+
+@media (max-width: 480px){
+
+    .tableWrapSt03{overflow: auto;}
+    /* .tableWrapSt03 table{width: 480px;} */
+    .tableWrapSt03 tbody tr td{white-space: nowrap;}
+
+}
+
+/* 상품후기 */
+.reviewBox .tableViewWrap .btnWrapSt01{margin-top: 0;}
+.reviewBox .tableViewWrap .ratingWrap{display: flex; align-items: center;}
+.reviewBox .tableViewWrap .ratingWrap .ratingText{margin-left: 43px; margin-right: 10px;}
+.reviewBox .tableViewWrap .contentView{min-height: 213px;}
+.reviewBox .fileImgWrap{display: flex; gap: 0 22px;}
+.reviewBox .fileImgWrap h4,
+.reviewBox .fileImgWrap span{font-size: 12px; color: #212121; font-weight: 400;}
+.reviewBox .fileImgWrap a{display: block; width: 74px; height: 23px; line-height: 23px; border: 1px solid #cfcfcb; font-weight: 700; color: #010101; font-family: 'Nanum Barun Gothic'; font-size: 12px; text-align: center;}
+.reviewBox .fileImgWrap .fileInfoText{display: flex; flex-direction: column; gap: 7px;}
+.reviewBox .btnWrapSt01{max-width: none; margin-top: 60px;}
+.reviewBox .fileImgWrap{margin-bottom: 21px; display: flex; gap: 0 26px; align-items: center; border-top: 0!important;}
+.reviewBox .fileImgWrap .imgBox{position: relative; width: 85px; height: 85px; border: 0; background-color: #ddd;}
+.reviewBox .fileImgWrap .imgBox img{position: absolute; top:0; left:0; right:0; bottom: 0;  max-width: 100%; max-height: 100%; margin: auto;}
+.reviewBox .fileImgWrap .productBtn{display: block; width: 74px!important; height: 23px!important; line-height: 23px; border: 1px solid #cfcfcb!important; font-size: 11px!important; color: #010101!important; font-weight: 700!important; background-color: #fff!important; border-radius: 0!important; padding: 0!important; text-align: center; cursor: pointer;}
+.reviewBox .reviewList{display: flex; align-items: center; justify-content: center;}
+.reviewBox .tableWrapSt03{position: relative;}
+.reviewBox .tableWrapSt03 table{margin-bottom: 25px;}
+.reviewBox .reviewList .review{position: relative;  appearance: none;}
+.reviewBox .reviewList .review::after{content: '☆'; font-size: 20px; color: #000;}
+.reviewBox .reviewList .review:checked::after{content: '★';}
+.reviewBox .reviewList .review.active::after{content: '★';}
+.reviewBox .tableWrapSt03 tbody tr td{font-size: 12px;}
+.reviewBox .tableWrapSt03 tbody tr td.ellipsis{overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.reviewBox .tableWrapSt03 tbody tr td .productWrap{justify-content: flex-start; gap: 0 10px; }
+.reviewBox .tableWrapSt03 tbody tr td .productWrap .imgWrap img{width: 84px; height: 83px;}
+.reviewBox .tableWrapSt03 tbody tr td .productWrap .textWrap{width: 100px;}
+.reviewBox .tableWrapSt03 tbody tr td .productWrap .textWrap p{overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-align: left;}
+.reviewBox .inputRadioWrap{display: flex; flex-wrap: wrap; align-items: center; gap: 0 14px;}
+.reviewBox .inputRadioWrap .inputRadioBox{display: flex; align-items: center; gap: 0 5px;}
+.reviewBox .inputRadioWrap .inputRadioBox label{cursor: pointer;}
+
+@media (max-width: 1024px){
+    
+    .reviewBox .mtableViewWrap .viewsWrap{align-items: center;}
+    .reviewBox .mtableViewWrap .views{display: flex; align-items: center; gap: 0 12px;}
+    .reviewBox .mtableViewWrap .btnWrapSt01{padding: 6px 0;}
+    .reviewBox .fileImgWrap{margin-left: 13px; margin-bottom: 16px;}
+    .reviewBox .tableWriteWrap{margin: 0;}
+    .reviewBox .titWrap input{width: 100%!important;}
+    .reviewWrap .container{padding: 0;}
+    .reviewBox .tableWrapSt03 table{margin-bottom: 0;}
+    /* .reviewBox .tableWrapSt03{overflow: visible;}
+    .reviewBox .tableWrapSt03 table{width: 100%;} */
+    .reviewBox .tableWrapSt03 tbody tr td{white-space: normal;}
+    .reviewBox .tableWrapSt01 tbody tr td .productWrap{flex-direction: row;}
+    .reviewBox .comBtnWrap {position: absolute; top: -43px; right: 0; }
+    .reviewBox .btnWrapSt01{margin-top: 22px;}
+    .reviewBox .tableWrap{display: none;}
+    .reviewProductList .mobileProductWrap{margin: 0; padding: 14px 17px 14px; border-left: 0; border-right: 0;}
+    .reviewProductList .mobileProductWrap .mPoductBox{margin: 0; align-items: center; gap: 0 37px; padding: 0; border-bottom: 0;}
+    .reviewProductList .mobileProductWrap .mPoductBox .textBox p{margin-bottom: 10px; font-size: 18px; font-weight: 300; color: #212121;}
+    .reviewProductList .mobileProductWrap .mPoductBox .reviewInfo{display: flex; align-items: center; gap: 0 15px;}
+    .reviewProductList .mobileProductWrap .mPoductBox .reviewInfo span{font-size: 18px!important; font-weight: 300; color: #212121;}
+
+}
+
+@media (max-width: 480px){
+
+    .reviewProductList .imgBox{margin-bottom: 20px!important;}
+    .reviewProductList .textBox{width: 100%; text-align: left;}
+    
+}
+
+/* 주문조회 */ 
+.historyBox .dateWrap{display: flex; align-items: center; margin-bottom: 36px;}
+.historyBox .dateWrap .selectWrap{margin:0 20px 0 0;}
+.historyBox .dateWrap .dateBtnWrap{display: flex; margin-right: 9px;}
+.historyBox .dateWrap .dateBtnWrap button{display: block; margin-right: -1px; width: 44px; height: 22px; background-color: #f4f4f4; font-size: 12px; color: #8f8f8f; text-align: center; border: 1px solid #e2e2e2;}
+.historyBox .dateWrap .calenderWrap{margin-right: 6px; display: flex; gap: 0 6px; align-items: center;}
+.historyBox .dateWrap .calenderWrap input{display: block; width: 91px; height: 22px; font-size: 12px; color: #212121;}
+.historyBox .dateWrap .calenderWrap .calenderBtn{display: block; padding: 16px 16px 0 0; background: url(../images/sub/calender.jpg)no-repeat;}
+.historyBox .dateWrap .calenderWrap .calenderBox{display: flex; gap: 0 7px; align-items: center;}
+.historyBox .tableWrap table tr th,
+.historyBox .tableWrap table tr td{font-size: 14px!important; font-weight: 300!important;}
+.historyBox .checkBtn{width: 39px; height: 18px; line-height: 20px; text-align: center; color: #fff; font-size: 12px; background-color: hsl(0, 0%, 11%); border-radius: 5px;} 
+.historyBox .selectWrap{margin-bottom: 39px; font-size: 12px; color: #212121;} 
+.historyBox .selectWrap select{padding-left: 7px; height: 21px; border: 1px solid #b5b6b3; font-size: 9px; color: #212121; cursor: pointer; } 
+.historyBox .historyInfoList{margin-bottom: 83px;}
+.historyBox .historyInfoList li{padding-left: 7px; position: relative; font-size: 12px; color: #a8a8a8;}
+.historyBox .historyInfoList li::before{content: ''; position: absolute; top:7px; left:0; width: 1px; height: 1px; background-color: #a8a8a8;}
+.historyBox .tableWrapSt03{margin: 0 0 60px;}
+.historyBox .title04{padding-left: 20px;}
+.historyBox .mobiledateWrap,
+.historyBox .mobilehistoryInfoList{display: none;}
+
+@media (max-width: 1024px){
+
+
+    .historyWrap .tab li{flex:1;}
+    .historyBox .title04{display: none;}
+    .historyBox .paginationWrap{margin-top: 36px;}
+    .historyBox .selectWrap{margin-bottom: 20px;}
+    .historyBox .historyInfoList{margin-bottom: 70px;}
+    .historyBox .dateWrap{padding: 0 5px;}
+    .historyBox .historyInfoList{margin-left: 10px;}
+    .historyBox .dateWrap .calenderWrap input{width: 100%;}
+
+    .historyBox .pchistoryInfoList,
+    .historyBox .tableWrapSt03,
+    .historyBox .pcdateWrap{display: none;}
+
+    .historyBox .mobilehistoryInfoList{display: block;}
+    .historyBox .mobilehistoryInfoList li{font-weight: 300; letter-spacing: 0;}
+    .historyBox .mobiledateWrap{margin-bottom: 25px; display: flex; align-items: center; gap: 0 6px; font-size: 12px; color: #212121; }
+    .historyBox .mobiledateWrap .selectWrap{margin: 0;}
+    
+}
+
+@media (max-width: 600px){
+
+    .historyBox .dateWrap .selectWrap,
+    .historyBox .dateWrap .selectWrap select{width: 100%!important;}
+    .historyBox .dateWrap{flex-direction: column; align-items: flex-start; gap: 5px;}
+    
+    .historyBox .mobiledateWrap .selectWrap{width: auto!important;}
+    .historyBox .mobiledateWrap{flex-direction: row; align-items: center!important;}
+
+}
+
+
+
+/* 주문/결제 */
+.paymentBox .tab{margin: 0 0 40px;}
+.paymentBox .inputRadioWrap{margin-bottom: 21px; display: flex; align-items: center; gap: 0 23px; line-height: 1;}
+.paymentBox .inputRadioWrap .inputRadioBox{display: flex; align-items: center; gap: 0 9px;}
+.paymentBox .inputRadioWrap label{padding-top: 2px; font-size: 12px; color: #000; cursor: pointer;} 
+.paymentBox .addressWrap #address01,
+.paymentBox .addressWrap #address02{width: 553px;}
+.paymentBox .messageWrap select{width: 668px!important;}
+.paymentBox .inputCheckBox{margin: 17px 0 0; display: flex; gap: 0 12px; align-items: center; justify-content: flex-end;}
+.paymentBox .inputCheckBox label{padding-top: 2px; font-size: 12px; color: #000; cursor: pointer;}
+.paymentBox .productBox{margin: 67px 0 90px;}
+.paymentBox .productBox .textWrap .productInfoText li{margin-bottom: 2px; font-family: 'Nanum Barun Gothic'; font-size: 14px; color: #484848; font-weight: 300;}
+.paymentBox .productBox .imgWrap img{display: block;}
+.paymentBox .productBox .box{position: relative; border: 1px solid #aaa; border-width: 1px 0; padding: 9px 20px 9px 16px;}
+.paymentBox .productBox .priceWrap{height: 35px; padding-left: 17px; align-items: center; display: flex; gap: 0 75px; font-size: 12px; color: #000; border-bottom: 1px solid #aaa;}
+.paymentBox .productBox .box .delBtn{width: 24px; height: 24px; position: absolute; top:19px; right:8px; background: url(../images/sub/delbtn.jpg)no-repeat;}
+.paymentBox .paymentInfoList{padding: 13px 7px 13px 12px; border: 1px solid #aaa; border-width: 1px 0;}
+.paymentBox .paymentInfoList li{margin-bottom: 14px; display: flex; justify-content: space-between; line-height: 1; font-size: 12px; color: #000;}
+.paymentBox .paymentInfoList li:last-child{margin-bottom: 0;}
+.paymentBox .priceInfo{margin-bottom: 90px; border-bottom: 1px solid #aaa; padding: 0 7px 0 12px; height: 35px; align-items: center; display: flex; justify-content: space-between;}
+.paymentBox .priceInfo span,
+.paymentBox .priceInfo em{font-size: 12px; color: #000; font-weight: 700; }
+.paymentBox .paymentMethod{}
+.paymentBox .paymentMethod .selectText{border-top: 1px solid #aaa; padding: 15px 0 40px 12px; display: block; font-size: 12px; color: #000; line-height: 1;}
+.paymentBox .paymentMethodSelect{margin-bottom: 20px; border-bottom: 1px solid #e1e0e0;}
+.paymentBox .paymentMethodSelect li a{padding: 10px 10px 10px 11px; display: block; font-size: 12px; color: #000; border: 1px solid #e1e0e0; border-bottom: 0;}
+.paymentBox .paymentMethodSelect li a.active{font-weight: 700; border: 1px solid #0086cf!important;}
+.paymentBox .depositWrap{padding: 5px 5px 5px 0; border: 1px solid #f1f0f0;}
+.paymentBox .depositWrap table tr{border: 0;}
+.paymentBox .tableWriteWrap .tableWrite tbody th{white-space: nowrap;}
+.paymentBox .tableWriteWrap .tableWrite tbody th,
+.paymentBox .tableWriteWrap .tableWrite tbody td{padding: 5px 20px 5px 14px;}
+.paymentBox .tableWriteWrap .tableWrite .inputRadioWrap{margin-bottom: 0!important; gap: 0 14px;}
+.paymentBox .agreeTextWrap{margin: 87px 0 72px;}
+.paymentBox .agreeTextWrap .inputCheckWrap{display: flex; align-items: center; justify-content: center; gap: 0 7px;}
+.paymentBox .agreeTextWrap label{font-size: 15px; color: #525252; cursor: pointer;}
+.paymentBox .comBtn04{margin: 0 auto;}
+.paymentBox .inputCheckWrap02 .inputCheckBox{justify-content: flex-start; gap: 0 5px;}
+.paymentBox .inputCheckWrap02 label{padding-top: 0;}
+.paymentBox .userInfo{margin-top: -18px;}
+.paymentBox .userInfo{position: relative;}
+.paymentBox .userInfo .box{padding: 14px 0 14px 14px; border-bottom: 1px solid #aaa;}
+.paymentBox .userInfo .box span,
+.paymentBox .userInfo .box p{font-size: 12px; color: #000; line-height: 1.6;}
+.paymentBox .userInfo .box select{font-size: 12px; color: #000; cursor: pointer;}
+.paymentBox .userInfo a{position: absolute; top:18px; right:20px; border-radius: 0;}
+
+@media (max-width: 1024px){
+
+    .paymentBox .tab{margin-bottom: 58px;}
+    .paymentBox .inputRadioWrap{padding-left: 12px; margin-bottom: 0;}
+    .paymentBox .tableWriteWrap{margin: 18px 0 0;}
+    .paymentBox .addressWrap #address01,
+    .paymentBox .addressWrap #address02{width: 100%!important;}
+    .paymentBox .tableWriteWrap .tableWrite .selectWrap select{width: 100%!important;}
+    .paymentBox .inputCheckWrap01{padding-right: 20px;}
+    .paymentBox .title04{padding-left: 10px;}
+    .paymentBox .paymentMethodSelect{margin-bottom: 55px;}
+    .paymentBox .depositWrap .tableWriteWrap .tableWrite .inputTextWrap input{width: 100%!important;}
+    .paymentBox .inputCheckWrap02{padding-left: 20px;}
+    .paymentBox .userInfo{margin-top: -42px;}
+    .paymentBox .userInfo a{right: 10px;}
+    
+}
+
+@media (max-width: 480px){
+
+    .tableWriteWrap .tableWrite .inputTextWrap input{width: 100%;}
+    .addressWrap .addressBtn{margin: 5px 0 0;}
+
+}
+
+@media (max-width: 414px){
+
+    .paymentBox .userInfo a{position: static; margin: 10px 14px;}
+
+}
+
+/* 회원정보수정 */
+.memberInfoBox .InfoText{margin-bottom: 60px; text-align: center;}
+.memberInfoBox .inputTextWrap{margin-bottom: 70px; display: flex; align-items: center; gap: 0 14px; justify-content: center;}
+.memberInfoBox .inputTextWrap span{font-size: 12px; color: #959595;}
+.memberInfoBox .inputTextWrap .inputTextBox input{width: 240px; height: 34px; border: 1px solid #b5b6b3;}
+.memberInfoBox .comBtn{max-width: 368px; margin: 0 auto;}
+.joinBox .comBtnWrap02 .box{display: flex; gap: 0 5px; justify-content: center;}
+.joinBox .comBtnWrap02 .box button{width: 145px; margin: 0; font-weight: 700; font-size: 22px;}
+.joinBox .comBtnWrap02 .box .cancellationBtn{background-color: #e1e1de; color: #363636; font-size: 22px;}
+.joinBox .btnWrap{justify-content: flex-end;}
+.joinBox .btnWrap .secessionBtn{margin: 27px 0 50px; width: 74px; height: 23px; border-radius: 0; font-weight: 700;}
+.joinBox .infoText{font-size: 12px; color: #959595;}
+.joinBox .infoWrap{display: flex; gap: 0 10px; align-items: center;}
+
+@media (max-width: 1024px){
+
+    .joinBox .btnWrap{margin-right: 12px;}
+    
+}
+
+@media (max-width: 480px){
+
+    .memberInfoBox .inputTextWrap span{flex-shrink: 0;}
+    .memberInfoBox .inputTextWrap .inputTextBox,
+    .memberInfoBox .inputTextWrap .inputTextBox input{width: 100%;}
+
+    .joinBox .infoWrap{flex-direction: column; align-items: flex-start; gap: 5px;}
+    .joinBox .comBtnWrap02 .box button{width: 50%; margin: 0; font-weight: 700; font-size: 16px!important;}
+
+}
+
+/* 상품리스트 */
+.productListBox .productInfoLink{margin-bottom: 27px; padding-bottom: 10px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #cfcfcf;}
+.productListBox .productInfoLink .productLink{display: flex; gap: 0 20px; align-items: center;}
+.productListBox .productInfoLink .productLink li{position: relative;}
+.productListBox .productInfoLink .productLink li::after{content: ''; position: absolute; top:5px; right:-11px; width: 1px; height: 7px; background-color: #585858;}   
+.productListBox .productInfoLink .productLink li:last-child:after{display: none;}
+.productListBox .productInfoLink .productLink li a:hover{font-weight: 700;}
+.productListBox .productInfoLink .productLink li a{display: block; font-weight: 300; color: #585858; font-family: 'Nanum Barun Gothic'; font-size: 13px; transition: all .3s;}
+.productListBox .productInfoLink .productText{font-weight: 300; color: #585858; font-family: 'Nanum Barun Gothic'; font-size: 13px;}
+.productList{display: flex; flex-wrap: wrap; gap: 60px 2%;}
+.productList li{width: 18.37%;}
+.productList li a:hover img{transform: translate(-50%, -50%) scale(1.1);}
+.productList li a:hover .text{text-decoration: underline;}
+.productList li .box{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.productList li .imgWrap{position: relative; margin-bottom: 12px; height: 235px; border: 1px solid #cecece; overflow: hidden;}
+.productList li .imgWrap img{max-width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); margin: 0 auto; transition: all .3s;} 
+.productList li .textWrap .text{margin-bottom: 14px; font-size: 17px; color: #000; line-height: 1.2; font-weight: 300; display: -webkit-box;  -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    height: 40px; line-height: 20px; overflow: hidden; text-overflow: ellipsis;} 
+.productList li .textWrap .priceWrap{/*display: flex; gap: 0 10px;*/ align-items: center; line-height: 1;  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.productList li .textWrap .priceWrap span{margin-right: 10px;}
+.productList li .textWrap .priceWrap .discount01{font-weight: 800; font-size: 17px; color: #a10101;}
+.productList li .textWrap .priceWrap .discount02{font-weight: 300; color: #000; text-decoration:line-through;}
+.productList li .textWrap .priceWrap .price{font-weight: 300; color: #000; font-size: 17px;}
+.productList li .textWrap .priceWrap .price strong{font-weight: 800;}
+.productListBox .paginationWrap{margin: 80px auto 0;}
+.productListBox .view{display: none; position: relative;padding: 5px 0; margin: 35px auto 0; width: 153px; height: 31px; border: 2px solid #000; font-size: 13px; color: #000; border-radius: 50px; text-align: center;}
+.productListBox .view::after{content: ''; position: absolute; top:11px; right:25px; width: 9px; height: 5px; background: url(../images/main/arrow.png)no-repeat;}
+.productList li .info{margin-top: 15px; display: block; width: 31px; height: 15px; line-height: 17px; border-radius: 5px; font-size: 12px;  color: #fff; text-align: center; letter-spacing: 0; font-weight: 300;}
+.productList li .soldOut{background-color: #ff0000;}
+.productList li .hit{background-color: #009cff;}
+.productList li .best{background-color: #009cff;}
+.productList li .new{background-color: #e61787;}
+
+@media (max-width: 1024px){
+
+    .productList{gap: 70px 2%;}
+    .productList li{width: 32%;}
+    .productList li .textWrap .priceWrap span{font-size: 21px!important;}
+    .productList li .textWrap .text{height: 46px; line-height: 24px; font-size: 21px;}
+
+}
+
+@media (max-width: 768px){
+
+    .productList{gap: 70px 4.26%;}
+    .productList li{width: 47.87%;}
+    .productList li:nth-child(n + 5){display: none;}
+    .productListBox .view{display: block;}
+
+}
+
+@media (max-width: 640px){
+
+    .productList{gap: 10.94vw 4.26%;}
+
+}
+
+@media (max-width: 480px){
+
+    .productList li .textWrap .text{height: 40px; line-height: 20px; font-size: 16px;}
+    .productList li .textWrap .priceWrap span{font-size: 16px!important;}
+
+}
+
+@media (max-width: 414px){
+
+    .productList li .textWrap .text{height: auto;}
+    .productList li{width: 100%;}
+    .productListBox .productInfoLink{flex-direction: column; gap: 5px; align-items: flex-start;}
+
+}
+
+/* 이용약관 */
+.utilizationBox{padding: 0 20px;}
+
+@media (max-width: 1024px){
+
+    .utilizationBox{padding: 0;}
+
+}
+
+/* 상품상세 */
+.productViewWrap .productTitle{margin-bottom: 10px; font-family: 'Nanum Barun Gothic'; font-weight: 700; font-size: 25px;}
+.productViewWrap .productLayout{margin-bottom: 60px; display: flex; flex-wrap: wrap; gap: 0 8.86%;}
+.productViewWrap .productLayout .producImgBox{width: calc(100% - 692px); flex-shrink: 0;}
+.productViewWrap .productLayout .producImgBox .imgBox{height: 0; padding-top: 99.4%; position: relative; margin-bottom: 38px; border: 1px solid #cecece;}
+.productViewWrap .productLayout .producImgBox .imgBox .mouse{padding-left: 29px; position: absolute; left:21px; bottom: 16px; font-size: 16px; color: #585858; font-family: 'Nanum Barun Gothic'; font-weight: 300;}
+.productViewWrap .productLayout .producImgBox .imgBox .mouse::before{content: ''; position: absolute; top:1px; left:0; width: 21px; height: 19px; background: url(../images/sub/mouse.png)no-repeat;} 
+ .productViewWrap .productLayout .producImgBox .imgBox img{position: absolute; top:0; left: 0; right:0; bottom: 0; display: block; width: 100%; height: 100%; object-fit: cover;}
+.productViewWrap .productLayout .producImgBox .view{display: block; margin-bottom: 13px; height: 51px; line-height: 51px; background-color: #e7e7e7; border: 1px solid #a4a4a3; border-radius: 50px; text-align: center;}
+.productViewWrap .productLayout .producImgBox .view span{position: relative; padding-left: 36px; font-family: 'Nanum Barun Gothic'; font-size: 22px; color: #000;}
+.productViewWrap .productLayout .producImgBox .view span::before{content: ''; position: absolute; top:2px; left:0; width: 21px; height: 19px; background: url(../images/sub/view.png)no-repeat;}
+.productViewWrap .productLayout .producImgBox .btnWrap{display: flex; gap:  0 14px;}
+.productViewWrap .productLayout .producImgBox .btnWrap button:hover{background-color: #e7e7e7; font-weight: 700;}
+.productViewWrap .productLayout .producImgBox .btnWrap button{display: block; width: 100%; height: 54px; border: 1px solid #222; text-align: center; font-family: 'Nanum Barun Gothic'; font-weight: 300; font-size: 22px; color: #484848; border-radius: 50px; transition: all .3s;}
+.productViewWrap .productLayout .producTextBox{/* width: 45.2%; */ width: 578px;}
+.productViewWrap .productLayout .producTextBox .textBox h3{margin-bottom: 19px; font-family: 'Nanum Barun Gothic'; font-weight: 700; color: #0a0a0a;}
+.productViewWrap .productLayout .producTextBox .productInfoText01{padding-bottom: 32px; border-bottom: 1px solid #cfcfcf;}
+.productViewWrap .productLayout .producTextBox .productInfoText01 li.discount span,
+.productViewWrap .productLayout .producTextBox .productInfoText01 li.discount em{color: #d45913;}
+.productViewWrap .productLayout .producTextBox .productInfoText01 li{margin-bottom: 5px; display: flex;}
+.productViewWrap .productLayout .producTextBox .productInfoText01 li span{width: 104px;}
+.productViewWrap .productLayout .producTextBox .productInfoText01 li span,
+.productViewWrap .productLayout .producTextBox .productInfoText01 li em{font-family: 'Nanum Barun Gothic'; font-weight: 700; font-size: 16px; color: #979797; text-align: left;}
+.productViewWrap .productLayout .producTextBox .productInfoText02{height: 74px; display: flex; flex-direction: column; align-items: flex-start; gap: 9px; border-bottom: 1px solid #cfcfcf; justify-content: center;}
+.productViewWrap .productLayout .producTextBox .productInfoText02 span,
+.productViewWrap .productLayout .producTextBox .productInfoText02 em{font-family: 'Nanum Barun Gothic'; font-weight: 300; color: #585858; font-size: 13px;}
+.productViewWrap .productLayout .producTextBox .productInfoText02 em{color:#d45913;}
+.productViewWrap .productLayout .producTextBox .productInfoText03{display: flex; justify-content: space-between; height: 50px; align-items: center; border-bottom: 1px solid #cfcfcf;}
+.productViewWrap .productLayout .producTextBox .productInfoText03 span{font-family: 'Nanum Barun Gothic'; font-weight: 300; color: #585858; font-size: 16px;}
+.productViewWrap .productLayout .producTextBox .productInfoText03 .price{font-family: 'Nanum Barun Gothic'; font-weight: 700; font-size: 19px;}
+.productViewWrap .productLayout .producTextBox .productInfoText04{margin-bottom: 28px; height: 62px; display: flex; align-items: center; justify-content: flex-end; font-family: 'Nanum Barun Gothic'; font-weight: 700; font-size: 19px; color:#000; border-bottom: 1px solid #cfcfcf;}
+.productViewWrap .productLayout .producTextBox .btnWrap{margin-bottom: 68px; display: flex;  flex-direction: column; gap: 12px; padding: 0 18px;}
+.productViewWrap .productLayout .producTextBox .btnWrap .purchaseBtn{width: 100%; display: flex; align-items: center; justify-content: center; height: 53px; background-color:#484848; text-align: center; font-family: 'Nanum Barun Gothic'; font-weight: 700; color: #fff; border-radius: 50px;}
+.productViewWrap .productLayout .producTextBox .btnWrap .btnBox{display: flex; width: 100%; gap: 0 20px;}
+.productViewWrap .productLayout .producTextBox .btnWrap .btnBox button{display: block; width: 100%; height: 57px; background-color: #e7e7e7; font-family: 'Nanum Barun Gothic'; color: #000; font-size: 20px; border-radius: 50px; border: 1px solid #a4a4a3; transition: all .3s;}  
+.productViewWrap .productLayout .producTextBox .btnWrap .btnBox button:hover{background-color: #484848; color: #fff;}
+.productViewWrap  .purchaseWrap{display: flex; gap: 0 8px; }
+.productViewWrap  .purchaseWrap .purchasebox{width: 50%;}
+.productViewWrap  .purchaseWrap .purchaseTop{padding: 11px 0; height: 61px; display: flex; gap: 0 7px; align-items: center; border-top: 2px solid #2b2f3a; border-bottom: 1px solid #eaecee; line-height: 1.2; justify-content: space-around;}
+.productViewWrap  .purchaseWrap .purchaseTop button{display: block;}
+.productViewWrap  .purchaseWrap .purchaseTop .box:nth-child(1){}
+.productViewWrap  .purchaseWrap .purchaseTop img{display: block; }
+.productViewWrap  .purchaseWrap .purchaseTop img.btnImg{margin-bottom: 5px;}
+.productViewWrap  .purchaseWrap .purchaseTop span{display: block; color: #77777d; font-size: 10px;}
+.productViewWrap  .purchaseWrap .purchaseTop .box .chkBtn{display: flex; align-items: center; justify-content: center; width: 37px; height: 37px; border: 1px solid #ccc; text-align: center; font-size: 12px; color: #4c4c53;}
+.productViewWrap  .purchaseWrap .textSlide{padding: 4px 50px 4px 0; position: relative;  height: 26px; /*display: flex; align-items: center; justify-content: space-between;*/}
+.productViewWrap  .purchaseWrap .textSlide .slide{display: flex; align-items: center; }
+.productViewWrap  .purchaseWrap .textSlide span{padding-right: 5px; flex-shrink: 0;}
+.productViewWrap  .purchaseWrap .textSlide span,
+.productViewWrap  .purchaseWrap .textSlide p{font-size: 12px; color: #929294; font-weight: 300;}
+.productViewWrap  .purchaseWrap .textSlide p{width: 192px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.productViewWrap  .purchaseWrap .textSlide span.st01{color: #00c05a;}
+.productViewWrap  .purchaseWrap .textSlide span.st02{color: #1e1e1e; font-weight: 700;}
+.productViewWrap  .purchaseWrap .textSlide .control{position: absolute; top:50%; right:0; transform: translateY(-50%); display:flex; align-items: center;}
+.productViewWrap  .purchaseWrap .textSlide .control button{display: block; width: 16px; height: 16px; position: relative; border: 1px solid #dddfe0;}
+.productViewWrap  .purchaseWrap .textSlide .control button::after{content: ''; width: 6px; height: 8px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.productViewWrap  .purchaseWrap .textSlide .control button.prev::after{background: url(../images/sub/prev.png)no-repeat;}
+.productViewWrap  .purchaseWrap .textSlide .control button.next::after{background: url(../images/sub/prev.png)no-repeat;  transform: translate(-50%, -50%) rotate(180deg);}
+.productViewWrap .numberWrap{ position: relative; width: 49px; height: 25px; border: 1px solid #d4d8d9; border-radius: 3px;}
+.productViewWrap .numberWrap .number{display: flex; align-items: center; height: 100%; padding-left: 7px; color: #353535; text-align: left; font-size: 12px!important;}
+.productViewWrap .numberWrap .numberBox{width: 21px; position: absolute; top:0; right:0; bottom: 0; display: flex; flex-direction: column; border-left: 1px solid #d4d8d9;}
+.productViewWrap .numberWrap .numberBox button{width: 100%; height: 100%; cursor: pointer;}
+.productViewWrap .numberWrap .numberBox button:last-child{border-bottom: 0;}
+.productViewWrap .numberWrap .numberBox .plus{background: url(../images/sub/arrow01.png)no-repeat center;}
+.productViewWrap .numberWrap .numberBox .minus{background: url(../images/sub/arrow05.png)no-repeat center;}
+.productViewWrap .numberWrap .numberBox .box{position: relative; height: 50%; display: flex; align-items: center; justify-content: center;  border-bottom: 1px solid #d4d8d9;}
+.productViewWrap .numberWrap .numberBox .box:last-child{border-bottom: 0;}
+.productViewWrap .couponWrap{margin-bottom: 40px;}
+.productViewWrap .couponWrap .couponDownLoadBox01{margin-bottom: 9px; display: flex; justify-content: space-between; padding: 0 0 9px; border-bottom: 1px solid #cfcfcf;}
+.productViewWrap .couponWrap .couponDownLoadBox01 span{align-self: flex-end; font-family: 'Nanum Barun Gothic'; font-weight: 300; color: #484848;} 
+.productViewWrap .couponWrap .couponDownLoadBox01 .couponDownLoad{display: block; width: 114px; height: 28px; border: 1px solid #eee; border-radius: 5px; color: #55555a; font-size: 13px;}
+.productViewWrap .couponWrap .couponDownLoadBox02 button{display: block; margin: 0 auto;}
+.productViewWrap .couponWrap .couponDownLoadBox02 button img{display: block;}
+.productViewWrap #productDetailInfo{padding-bottom: 65px;}
+.productViewWrap #productDetailInfo .tab{ margin-bottom: 65px;}
+.productViewWrap #productDetailInfo img{display: block; max-width: 780px; width: 100%; margin: 0 auto;}
+.productViewWrap .tab{margin: 0 0 50px;}
+.productViewWrap #productPurchaseInfo{padding: 0 22px 0;}
+.productViewWrap #productPurchaseInfo{padding-bottom: 70px;}
+.productViewWrap #productPurchaseInfo .tab{margin-bottom: 40px;}
+.productViewWrap #productPurchaseInfo .layoutBox{display: flex; gap: 0 75px;}
+.productViewWrap .tab{gap: 0 17px;}
+.productViewWrap .tab li{flex: 1;}
+.productViewWrap #productListWrap,
+.productViewWrap #productQAWrap,
+.productViewWrap #productReviewWrap{padding: 0 0 100px;}
+.productViewWrap #productPurchaseInfo .box01{position: relative; width: 47%;}
+.productViewWrap #productPurchaseInfo .box01::after{content: ''; position: absolute; top:0; bottom: 0; right:-34px; width: 1px; background-color: #c9c9c9;}
+.productViewWrap #productPurchaseInfo .box02{width: 67%;}
+.productViewWrap #productPurchaseInfo h4{margin-bottom: 15px; font-size: 16px!important;}
+.productViewWrap #productPurchaseInfo li,
+.productViewWrap #productPurchaseInfo h4,
+.productViewWrap #productPurchaseInfo p{font-family: 'Nanum Barun Gothic'; font-weight: 300; color: #484848; font-size: 13px; letter-spacing: 0;}
+.productViewWrap .productBtn{display: flex; gap: 0 10px; justify-content: flex-end;}
+.productViewWrap .productBtn a{width: 89px; height: 38px; line-height: 38px; border: 1px solid #ddd; border-radius: 5px; font-family: 'Nanum Barun Gothic'; font-weight: 300; font-size: 13px; color: #484848; text-align: center; font-weight: 500;}
+.productViewWrap .productBtn a:hover{text-decoration: underline;}
+.productViewWrap .iconBox{display: none;}
+.productViewWrap .mobileProductTitle{display: none;}
+.productViewWrap .reviewText{display: none;}
+.productViewWrap .secretMessage{display: none;}
+
+@media (max-width: 1200px){
+
+    .productViewWrap .productLayout .producImgBox{width: calc(100% - 636px);}
+    .productViewWrap .productLayout{gap: 0 5%;}
+
+}
+
+@media (max-width: 1024px){
+
+    .productViewWrap .secretMessage{display: block;}
+    .productViewWrap .productLayout .producImgBox .imgBox .mouse{display: none}
+    .productViewWrap .reviewText{display: block;}
+    .productViewWrap .mobileProductTitle{display: block; margin-bottom: 30px; text-align: center; color: #0a0a0a; font-size: 38px;}
+    .productViewWrap #productDetailInfo{padding-bottom: 30px;}
+    .productViewWrap .couponWrap{padding: 0 30px;}
+    .productViewWrap .productLayout{margin-bottom: 39px; padding: 0 30px;}
+    .productViewWrap .productLayout .producTextBox .productInfoText01{padding-bottom: 9px;}
+    .productViewWrap .productLayout{flex-direction: column;}
+    .productViewWrap .productLayout .producImgBox{width: 100%;}
+    .productViewWrap .productLayout .producImgBox .imgBox{margin-bottom: 18px;}
+    .productViewWrap .productLayout .producTextBox{width: 100%;}
+    .productViewWrap .productLayout .producTextBox h3{display: none;}
+    .productViewWrap .productLayout .producImgBox .btnWrap{display: none;}
+    .productViewWrap .productLayout .producImgBox .view{display: none;}
+    .productViewWrap .productLayout .producTextBox .btnWrap{margin-bottom: 34px;}
+
+    .productViewWrap .tableWrapSt02 tbody tr td.name::after{display: none;}
+    .productViewWrap .productList{padding: 0 7px; flex-wrap: nowrap;}
+    .productViewWrap .tableWrapSt02{margin: 0 0 20px!important;}
+    .productViewWrap #productPurchaseInfo .layoutBox{padding: 0 20px;}
+    .productViewWrap #productPurchaseInfo .box{width: 100%;}
+    .productViewWrap #productPurchaseInfo{padding: 0 0 50px;}
+    .productViewWrap #productPurchaseInfo .box01::after{display: none;}
+    .productViewWrap .couponWrap{margin-bottom: 30px;}
+    .productViewWrap .tab{gap: 0 6px;}
+    .productViewWrap #productListWrap .tab{margin-bottom: 20px!important;}
+    .productViewWrap #productReviewWrap .tab,
+    .productViewWrap #productReviewWrap .tab,
+    .productViewWrap #productQAWrap .tab{margin-bottom: 30px!important; }
+    .productViewWrap .tab li a{/*height: 23px; line-height: 23px; font-size: 11px;*/ height: 36px; line-height: 36px; font-size: 16px; border-radius: 10px 10px 0 0;}
+    .productViewWrap #productPurchaseInfo .layoutBox{flex-direction: column; gap: 20px;}
+
+    .productViewWrap #productListWrap,
+    .productViewWrap #productQAWrap,
+    .productViewWrap #productReviewWrap{padding: 0;}
+    .productViewWrap .paginationWrap{margin-top: 0;}
+    
+    .productViewWrap .productBtn{margin-bottom: 20px; padding: 0 24px;}
+    .productViewWrap .productBtn a{width: 50%; height: 54px; line-height: 54px; font-size: 22px; color: #484848; border-radius: 50px; border: 1px solid #222;}
+    .productViewWrap .tableWrapSt02 tbody tr.reviewText td:nth-child(1){display: block;}
+    .productViewWrap .tableWrapSt02 tbody tr td .rating{position: relative;}
+    .productViewWrap .tableWrapSt02 tbody tr td .rating::before{content: '평점'; display: inline-block; margin-right: 3px;}
+    .productViewWrap .reviewText{padding: 14px 0; background-color: #eee;}
+    .productViewWrap .reviewText p{margin-bottom: 9px; font-family: 'Nanum Barun Gothic'; font-weight: 300; color: #484848; text-align: left;}
+    .productViewWrap .reviewText .reviewBtnWrap{display: flex; gap: 0 7px;}
+    .productViewWrap .reviewText .reviewBtnWrap a{display: block; min-width: 69px; height: 29px; line-height: 29px; background-color: #fff; border: 1px solid #d9d9d9; border-radius: 5px; font-family: 'Nanum Barun Gothic'; font-weight: 300;}   
+    .productViewWrap .reviewText .reviewBtnWrap a span{margin-left: -5px; position: relative; padding-left: 12px;}
+    .productViewWrap .reviewText .reviewBtnWrap a span::before{content: ''; position: absolute; top:0; left:0; width: 11px; height: 12px; background: url(../images/sub/write.png)no-repeat;}
+    .productViewWrap .iconBox span,
+    .productViewWrap .iconBox img{display: block;}
+    .productViewWrap .tableWrapSt02 tbody tr td.text{gap: 0 10px;}
+    .productViewWrap .iconBox{display: block;}
+    .productViewWrap .tableWrapSt02 tbody tr td a{padding-top: 2px;}
+    .productViewWrap .tableWrapSt02 tbody tr td.check{display: none;}
+    .productViewWrap .productList li:nth-child(n + 3){display: none;}
+    .productViewWrap .productList li{width: 49%;}
+    .productViewWrap .productTitle{padding: 0 7px;}
+
+}
+
+@media (max-width: 600px){
+
+    
+    .productViewWrap .productTitle{font-size: 20px;}
+    .productViewWrap .purchaseWrap{flex-direction: column; gap: 20px;}
+    .productViewWrap .purchaseWrap .purchasebox{width: 80%; margin: 0 auto;}
+
+}
+
+@media (max-width: 480px){
+
+    .productViewWrap #productDetailInfo .tab{margin-bottom: 13vw;}
+    .productViewWrap .mobileProductTitle{padding: 0 20px; font-size: 26px; word-break: keep-all;}
+    .productViewWrap .productBtn a,
+    .productViewWrap .productLayout .producTextBox .btnWrap .btnBox button{height: 38px; line-height: 38px; font-size: 16px;}
+    .productViewWrap .productLayout .producTextBox .btnWrap .purchaseBtn{height: 45px;}
+    .productViewWrap .productLayout .producTextBox .productInfoText03 .price{font-size: 16px;}
+    .productViewWrap .productLayout .producTextBox .productInfoText04{font-size: 16px;}
+    .productViewWrap .productLayout .producTextBox .productInfoText04{height: 48px;}
+    .productViewWrap .tab li a{font-size: 3vw;}
+    .productViewWrap #productPurchaseInfo .tab{margin-bottom: 8vw;}
+
+    .productViewWrap #productReviewWrap .tab,
+    .productViewWrap #productReviewWrap .tab,
+    .productViewWrap #productQAWrap .tab{margin-bottom: 6vw!important; }
+    .productViewWrap .purchaseWrap .textSlide p{width: auto;}
+
+}
+
+@media (max-width: 414px){
+
+    .productViewWrap .mobileProductTitle{margin-bottom: 20px; font-size: 20px;}
+    .productViewWrap .purchaseWrap .purchasebox{width: 100%;}
+
+}
+
+/* 팝업-공통 */
+.popupbg{position: fixed; top:0; left:0; right:0; bottom: 0; background: rgba(0,0,0,.5);}
+.popupWrap{padding: 0 0 21px;  width: 100%; position: fixed; top:50%; left: 50%; transform: translate(-50%, -50%); z-index: 999; border: 1px solid #7f8186; background-color: #fff;}
+.popupWrap .text{margin-bottom: 33px; display: block; padding-left: 19px; height: 39px; line-height: 39px; background-color:#666; font-size: 14px; color: #fff;}
+.popupWrap .popupClose{position: absolute; top:12px; right:16px; width: 13px; height: 13px; background: url(../images/sub/close.png)no-repeat;}
+.popupWrap .close{display: block; margin: 0 auto; width: 60px; height: 20px; line-height: 20px; border: 1px solid #e2e2e2; font-size: 11px; color: #686868; background-color: #fff;}
+
+@media (max-width: 1024px){
+
+    .popupWrap{width: 90%;}
+
+}
+
+/* 팝업-관심상품닫기 */
+.popupInterestWrap{max-width: 319px; height: 214px;}
+.popupInterestWrap p{margin-bottom: 32px; text-align: center; font-size: 15px; color: #000;}
+.popupInterestWrap .popupBtnWrap{display: flex; gap: 0 4px; justify-content: center;}
+.popupInterestWrap .popupBtnWrap button{width: 97px; height: 27px; line-height: 27px; text-align: center; font-weight: 700;  font-size: 13px;}
+.popupInterestWrap .popupBtnWrap .popupBtn01{background-color: #000;  color:#fff;}
+.popupInterestWrap .popupBtnWrap .popupBtn02{background-color: #e1e1de; color: #363636;}
+
+/* 팝업-주문상품선택 */
+.popupWrap .mobileProductList li{margin-bottom: 0;}
+.popupWrap .mobileProductWrap .productcontentBox{width: 100%; padding: 20px 0; display: flex; gap: 0 23px; align-items: center; border-bottom: 1px solid #cecece;}
+.popupWrap .mobileProductWrap{height: 250px; margin: 0 12px 20px; padding: 0 17px; border: 1px solid #aaa; overflow-y: auto;} 
+.popupWrap .mobileProductWrap .infoText{margin-bottom: 23px;}
+.popupWrap .mobileProductWrap .infoText em{margin-right: 17px; font-family: 'Nanum Barun Gothic'; font-weight: 700; font-size: 23px; color: #484848;}
+.popupWrap .mobileProductWrap .infoText span{font-family: 'Nanum Barun Gothic'; font-size: 23px; color: #484848;}
+.popupWrap .selectBtn{display: block; margin: 0 auto; width: 113px; height: 31px; background-color: #000; color: #fff; border-radius: 5px; text-align: center; font-size: 15px;}
+.popupWrap .mobileProductWrap .mPoductBox{flex-direction: row; margin: 0; padding: 0; border: 0; align-items: center; display: flex; gap: 0 25px;}
+.popupWrap .mobileProductWrap .mPoductBox:last-child .productcontentBox{border-bottom: 0;}
+.popupWrap .mobileProductWrap .mPoductBox .imgBox{flex-shrink: 0; margin: 0; position: relative; width: 84px; height: 84px;}
+.popupWrap .mobileProductWrap .mPoductBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.popupWrap .mobileProductWrap .mPoductBox .textBox h4{font-family: 'Nanum Barun Gothic'; font-weight: 300; font-size: 17px; color: #484848;}
+.popupWrap .mobileProductWrap .mPoductBox .textBox span{display: block; font-family: 'Nanum Barun Gothic'; font-weight: 300; font-size: 17px; color: #484848;}
+.popupWrap .mobileProductWrap .mPoductBox .textBox em{display: block; margin-top: 5px; font-size: 13px; color: #212121}
+.popupWrap .mobileProductWrap .mProductBtnWrap{display: flex; justify-content: space-between;}
+.popupWrap .mobileProductWrap .mProductBtnWrap button{width: 113px; height: 31px; line-height: 31px; border: 1px solid #cfcfcb; border-radius: 5px; text-align: center; font-size: 15px;}
+.popupWrap .mobileProductList{display: block;}
+.popupWrap .mobileProductWrap .buttonSt01{background-color: #000; color: #fff;}
+.popupWrap .mobileProductWrap .inputCheckBox input{display: block; width: 18px; height: 17px; cursor: pointer;}
+.popupproductWrap {max-width: 599px;}
+.popupproductWrap .text{margin-bottom: 21px;}
+.popupproductWrap .selectWrap{display: flex; justify-content: flex-end; margin: 0 20px 7px;}
+.popupproductWrap .selectWrap select{width: 99px; height: 21px; border: 1px solid #b5b6b3; font-size: 12px; color: #212121; cursor: pointer;}
+.popupproductWrap .popupTableWrap{margin-bottom: 21px; padding: 0 16px;}
+.popupproductWrap .popupTable{width: 100%;}
+.popupproductWrap .popupTable tr th{padding: 10px 10px; font-size: 12px; color: #212121; border-top: 1px solid #aaa; text-align: center; font-weight: 400;}
+.popupproductWrap .popupTable tr td{padding: 7px 10px; font-size: 12px; color: #212121; border-top: 1px solid #aaa; font-weight: 400; text-align: center;}
+.popupproductWrap .popupTable .imgBox{width: 61px; height: 61px; margin: 0 auto;}
+.popupproductWrap .popupTable .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+
+@media (max-width: 480px){
+
+    .popupproductWrap .popupTableWrap{overflow-x: auto;}
+    .popupproductWrap .popupTable{width: 480px;}
+    .popupWrap .mobileProductWrap .mPoductBox{gap: 0 13px;}
+    .popupWrap .mobileProductWrap{padding: 0 13px;}
+    .popupproductWrap .mobileProductWrap .inputCheckBox{padding-top: 20px; margin-bottom: 0; align-self: flex-start;}
+    .popupWrap .mobileProductWrap .mPoductBox .imgBox{margin-bottom: 15px; width: 100%!important;}
+    .popupWrap .mobileProductWrap .mPoductBox .textBox{width: 100%; text-align: left;}  
+    .popupWrap .mobileProductWrap .mPoductBox .textBox h4{margin-bottom:0;}
+    .popupWrap .mobileProductWrap .mPoductBox .textBox h4,
+    .popupWrap .mobileProductWrap .mPoductBox .textBox span{font-size: 14px;}
+    .popupWrap .mobileProductWrap .productcontentBox{flex-direction: column;}
+    .popupWrap .mobileProductWrap .inputCheckBox input{width: 15px; height: 15px;}
+
+
+}
+
+/* @media (max-width: 414px){
+
+    .popupWrap .mobileProductWrap .productcontentBox{flex-direction: column;}  
+    .popupWrap .mobileProductWrap .mPoductBox .textBox h4{margin-bottom:0;}
+    .popupWrap .mobileProductWrap .mPoductBox .imgBox{margin: 0 0 15px;}
+    .popupWrap .mobileProductWrap .mPoductBox .textBox{width: 100%; text-align: left;}  
+    .popupWrap .mobileProductWrap .mPoductBox .textBox h4,
+    .popupWrap .mobileProductWrap .mPoductBox .textBox span{font-size: 14px;}
+
+} */
